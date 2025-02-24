@@ -93,11 +93,11 @@ global.author = `✔️𝗔𝗹𝗰𝗮|𝗕𝗼𝘁` //"✔️𝗔𝗹𝗰𝗮|
 global.wm = '𝘼𝙇𝘾𝘼𝘽𝙊𝙏' 
 global.botname = '𝘼𝙇𝘾𝘼𝘽𝙊𝙏'
 global.vs = '1.9.5'
-global.yt = 'https://www.youtube.com/@elrebelde.21'
-global.tiktok = 'https://www.tiktok.com/@elrebelde.21'
-global.md = 'https://github.com/elrebelde21/LoliBot-MD'
-global.fb = 'https://www.facebook.com/elrebelde21'
-global.face = 'https://www.facebook.com/groups/872989990425789/'
+global.yt = 'https://www.instagram.com/@alcashop.ff'
+global.tiktok = 'https://www.instagram.com/@alcashop.ff'
+global.md = 'https://www.instagram.com/@alcashop.ff'
+global.fb = 'https://www.instagram.com/@alcashop.ff'
+global.face = 'https://www.instagram.com/@alcashop.ff'
 
 global.nna = 'https://chat.whatsapp.com/ByQ7EqfLdCz0560VXNKDif' //Update
 global.nna2 = 'https://chat.whatsapp.com/ByQ7EqfLdCz0560VXNKDif' //LoliBot update
