@@ -6,10 +6,12 @@ import cheerio from 'cheerio'
 import fetch from 'node-fetch'
 import axios from 'axios'
 import moment from 'moment-timezone' 
+import { es as esDefault, en as enDefault } from "./lib/multi-language/_default.js"
+import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 
 //---------[ Añada los numeros a ser Propietario/a ]---------
 
-global.owner = [['5214774444444', 'ＰＲＯＰＩＥＴＡＲＩＯ', true], ['593968585383'], ['595986172767'], ['5219999699999'], ['523482800300'], ['573007487856'], ['573008499604'], ['5492266613038']]
+global.owner = [['528241050228', 'Alcashop', true], ']]
 global.mods = []
 global.prems = []
 
