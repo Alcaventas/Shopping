@@ -125,11 +125,11 @@ if (!('sBye' in chat)) chat.sBye = ''
 if (!('sPromote' in chat)) chat.sPromote = ''         
 if (!('sDemote' in chat)) chat.sDemote = '' 
 if (!('delete' in chat)) chat.delete = false            
-if (!('modohorny' in chat)) chat.modohorny = true   
+if (!('modohorny' in chat)) chat.modohorny = false   
 if (!('stickers' in chat)) chat.stickers = false         
 if (!('autosticker' in chat)) chat.autosticker = false   
 if (!('audios' in chat)) chat.audios = false           
-if (!('antiLink' in chat)) chat.antiLink = false     
+if (!('antiLink' in chat)) chat.antiLink = true     
 if (!('antiLink2' in chat)) chat.antiLink2 = false
 if (!('antiTiktok' in chat)) chat.antiTiktok = false
 if (!('antiYoutube' in chat)) chat.antiYoutube = false
@@ -141,14 +141,14 @@ if (!('antiDiscord' in chat)) chat.antiDiscord = false
 if (!('antiThreads' in chat)) chat.antiThreads = false
 if (!('antiTwitch' in chat)) chat.antiTwitch = false
 if (!('antifake' in chat)) chat.antifake = false
-if (!('reaction' in chat)) chat.reaction = true       
+if (!('reaction' in chat)) chat.reaction = false       
 if (!('modoadmin' in chat)) chat.modoadmin = false 
 if (!('game' in chat)) chat.game = true
 if (!('game2' in chat)) chat.game2 = false
 if (!('simi' in chat)) chat.simi = false
-if (!('antiTraba' in chat)) chat.antiTraba = true 
-if (!('autorespond' in chat)) chat.autorespond = true 
-if (!('autolevelup' in chat))  chat.autolevelup = true
+if (!('antiTraba' in chat)) chat.antiTraba = false 
+if (!('autorespond' in chat)) chat.autorespond = false 
+if (!('autolevelup' in chat))  chat.autolevelup = false
 if (!isNumber(chat.expired)) chat.expired = 0
 if (!('horarioNsfw' in chat)) { 
 chat.horarioNsfw = {
@@ -167,11 +167,11 @@ sPromote: '',
 sDemote: '', 
 sAutorespond: '', 
 delete: false,
-modohorny: true,
+modohorny: false,
 stickers: false,
 autosticker: false,
 audios: false,
-antiLink: false,
+antiLink: true,
 antiLink2: false,
 antiTiktok: false,
 antiYoutube: false,
@@ -183,15 +183,15 @@ antiDiscord: false,
 antiThreads: false,
 antiTwitch: false,
 antifake: false,
-reaction: true,
+reaction: false,
 modoadmin: false,
 antitoxic: false,
 game: true, 
 game2: false, 
 simi: false,
-antiTraba: true,
-autorespond: true, 
-autolevelup: true,
+antiTraba: false,
+autorespond: false, 
+autolevelup: false,
 expired: 0,
 horarioNsfw: {
 inicio: "00:00", 
@@ -211,7 +211,7 @@ if (!('antiCall' in settings)) settings.antiCall = true
 if (!('antiSpam' in settings)) settings.antiSpam = true 
 if (!('modoia' in settings)) settings.modoia = false
 if (!('anticommand' in settings)) settings.anticommand = false	
-if (!('jadibotmd' in settings)) settings.jadibotmd = true
+if (!('jadibotmd' in settings)) settings.jadibotmd = false
 if (!('status' in settings)) settings.status = 0
 } else global.db.data.settings[this.user.jid] = {
 self: false,
@@ -224,7 +224,7 @@ antiCall: true,
 antiSpam: true,
 modoia: false, 
 anticommand: false, 	
-jadibotmd: true,
+jadibotmd: false,
 status: 0
 }} catch (e) {
 console.error(e)
@@ -613,8 +613,8 @@ for (let nk of callUpdate) {
 if (nk.isGroup == false) {
 if (nk.status == "offer") {
 let callmsg = await this.reply(nk.from, `ʜᴏʟᴀ *@${nk.from.split('@')[0]}*, ʟᴀs ${nk.isVideo ? 'videollamadas' : 'llamadas'} ɴᴏ ᴇsᴛᴀɴ ᴘᴇʀᴍɪᴛɪᴅᴀs, sᴇʀᴀs ʙʟᴏǫᴜᴇᴀᴅᴏ.\n\nsɪ ᴀᴄᴄɪᴅᴇɴᴛᴀʟᴍᴇɴᴛᴇ ʟʟᴀᴍᴀsᴛᴇ ᴘᴏɴɢᴀsᴇ ᴇɴ ᴄᴏɴᴛᴀᴄᴛᴏ ᴄᴏɴ ᴍɪ ᴄʀᴇᴀᴅᴏʀ ᴘᴀʀᴀ ǫᴜᴇ ᴛᴇ ᴅᴇsʙʟᴏǫᴜᴇᴇ!\n\nɢʀᴜᴘᴏ ᴀsɪsᴛᴇɴᴄɪᴀ ғᴀᴄᴇʙᴏᴏᴋ: ${fb}`, false, { mentions: [nk.from] })
-let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 👑;;;\nFN:𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿\nORG:𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 👑\nTITLE:\nitem1.TEL;waid=5214774444444:+52 477 444 4444\nitem1.X-ABLabel:𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 👑\nX-WA-BIZ-DESCRIPTION:[❗] ᴇsᴄʀɪʙɪ sᴏʟᴏ ᴘᴏʀ ᴄᴏsᴀs ᴅᴇʟ ʙᴏᴛ.\nX-WA-BIZ-NAME:𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 👑\nEND:VCARD`
-await this.sendMessage(nk.from, { contacts: { displayName: '𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 👑', contacts: [{ vcard }] }}, {quoted: callmsg})
+let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;𝘼𝙇𝘾𝘼𝘽𝙊𝙏⚡️;;;\nFN:𝘼𝙇𝘾𝘼𝘽𝙊𝙏⚡️\nORG:𝘼𝙇𝘾𝘼𝘽𝙊𝙏⚡️ 👑\nTITLE:\nitem1.TEL;waid=5214774444444:+52 477 444 4444\nitem1.X-ABLabel:𝘼𝙇𝘾𝘼𝘽𝙊𝙏⚡️ 👑\nX-WA-BIZ-DESCRIPTION:[❗] ᴇsᴄʀɪʙɪ sᴏʟᴏ ᴘᴏʀ ᴄᴏsᴀs ᴅᴇʟ ʙᴏᴛ.\nX-WA-BIZ-NAME:𝘼𝙇𝘾𝘼𝘽𝙊𝙏⚡️\nEND:VCARD`
+await this.sendMessage(nk.from, { contacts: { displayName: '𝘼𝙇𝘾𝘼𝘽𝙊𝙏⚡️', contacts: [{ vcard }] }}, {quoted: callmsg})
 await this.updateBlockStatus(nk.from, 'block')
 }}}}
 
