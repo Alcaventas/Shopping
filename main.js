@@ -253,7 +253,7 @@ console.info = () => {}
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: opcion == '1' ? ['LoliBot-MD', 'Edge', '20.0.04'] : methodCodeQR ? ['LoliBot-MD', 'Edge', '20.0.04'] : ["Ubuntu", "Chrome", "20.0.04"],
+browser: opcion == '1' ? ['𝘼𝙇𝘾𝘼𝘽𝙊𝙏', 'Edge', '20.0.04'] : methodCodeQR ? ['LoliBot-MD', 'Edge', '20.0.04'] : ["Ubuntu", "Chrome", "20.0.04"],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -285,7 +285,7 @@ auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
 },
-browser: opcion == '1' ? ['LoliBot-MD', 'Edge', '20.0.04'] : methodCodeQR ? ['LoliBot-MD', 'Edge', '20.0.04'] : ["Ubuntu", "Chrome", "20.0.04"],
+browser: opcion == '1' ? ['𝘼𝙇𝘾𝘼𝘽𝙊𝙏', 'Edge', '20.0.04'] : methodCodeQR ? ['LoliBot-MD', 'Edge', '20.0.04'] : ["Ubuntu", "Chrome", "20.0.04"],
 version: version,
 generateHighQualityLinkPreview: true
 };
