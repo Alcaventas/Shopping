@@ -21,10 +21,14 @@ global.botNumberCode = "" //Ejemplo: +59309090909
 global.confirmCode = "" 
 
 //cambia a false Desactivar en "auto-reconexion" de sub-bots
-global.gataJadibts = true 
+global.gataJadibts = false 
 
 // Cambiar a false para usar el Bot desde el mismo numero del Bot.
 global.isBaileysFail = false
+
+global.lenguajeGB = es
+global.mid = esDefault
+global.version_language = '1.0 (MID-GB)'
 
 //---------[ APIS GLOBAL ]---------
 
@@ -81,13 +85,13 @@ global.moment = moment
 
 //------------------------[ Stickers ]-----------------------------
 
-global.packname = 'LoliBot'
-global.author = 'elrebelde21'
+global.packname = '𝘼𝙇𝘾𝘼𝘽𝙊𝙏'
+global.author = '𝘼𝙡𝙘𝙖𝙨𝙝𝙤𝙥'
 
 //------------[ Versión | Nombre | cuentas ]------------
 
-global.wm = '𝐋𝐨𝐥𝐢𝐁𝐨𝐭-𝐌𝐃' 
-global.botname = '𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿'
+global.wm = '𝘼𝙇𝘾𝘼𝘽𝙊𝙏' 
+global.botname = '𝘼𝙇𝘾𝘼𝘽𝙊𝙏'
 global.vs = '1.9.5'
 global.yt = 'https://www.youtube.com/@elrebelde.21'
 global.tiktok = 'https://www.tiktok.com/@elrebelde.21'
